@@ -528,7 +528,7 @@ class GovernmentBuildingDetailScreen(tk.Frame):
                         self.details_text.insert(tk.END, "    No room details reported for this floor.\n")
                     else:
                         for room_name, room_count in sorted(rooms_data.items()):
-                            self.details_text.insert(tk.END, f"      {room_name}: {room_count} people\n")
+                            self.details_text.insert(tk.END, f"  ROOM {room_name}: {room_count} people\n")
                     self.details_text.insert(tk.END, "\n")
 
         self.details_text.config(state=tk.DISABLED)
